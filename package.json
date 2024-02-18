@@ -1,0 +1,27 @@
+{
+  "name": "osint",
+  "version": "1.0.0",
+  "description": "nitrous-oxi.de osint library written in in typescript",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+    "start": "node dist/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NitrousSL/osint.git"
+  },
+  "keywords": [
+    "typescript",
+    "osint"
+  ],
+  "author": "David & Marc",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "tsc-alias": "^1.8.8"
+  }
+}
