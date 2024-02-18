@@ -5,6 +5,8 @@ import { ModuleMeta }     from "@interface/iModuleMeta";
 
 import { Module }         from "@module/module";
 
+import { PathFinder }     from "@config/*";
+
 import { exec }           from "child_process";
 import path               from "path";
 
@@ -16,9 +18,8 @@ const META: ModuleMeta = {
     type        : ModuleType.Enrichment,
 }
 
-// root/dist/src/module/impl/email/google.js => root/bin/ghuntQuery.py
-const ghunt : string = path.join(__dirname, "../../../../../", "bin", "ghuntQuery.py");
-const creds : string = path.join(__dirname, 'creds.txt');
+const ghunt : string = path.join(PathFinder.bin(), "ghuntQuery.py");
+const creds : string = path.join(PathFinder.root(), 'creds.txt');
 
 export class Google extends Module {
 
