@@ -3,7 +3,7 @@ import { ModuleType }     from "@enum/eModuleType";
 
 import { ModuleMeta }     from "@interface/iModuleMeta";
 
-import { Module }         from "osint/src/module/module";
+import { Module }         from "@module/module";
 
 import axios              from "axios";
 

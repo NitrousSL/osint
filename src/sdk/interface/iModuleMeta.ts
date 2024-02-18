@@ -1,5 +1,5 @@
-import { ModuleCategory } from "osint/src/sdk/enum/eModuleCategory";
-import { ModuleType }     from "osint/src/sdk/enum/eModuleType";
+import { ModuleCategory } from "@enum/eModuleCategory";
+import { ModuleType }     from "@enum/eModuleType";
 
 /*
     * @return { ModuleMeta }

@@ -1,4 +1,4 @@
-import { ModuleCategory } from "osint/src/sdk/enum/eModuleCategory";
+import { ModuleCategory } from "@enum/eModuleCategory";
 
 export default interface IQueryStandardization {
 
