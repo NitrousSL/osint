@@ -5,8 +5,6 @@ import {
     Module,
 }                         from "osint.ts";
 
-import { PathFinder }     from "@config/*";
-
 import { exec }           from "child_process";
 import path               from "path";
 
@@ -28,7 +26,7 @@ export class Google extends Module {
     public async query(query: string): Promise<any> {
 
         let execQuery : string = `python3.10 ${ghunt} ${query} `;
-        
+
         if (!creds) { execQuery += process.env.GHUNT_CREDS; }
 
         const result = await new Promise((resolve, reject) => {
