@@ -1,13 +1,13 @@
-import { ModuleCategory } from "@enum/eModuleCategory";
-import { ModuleType }     from "@enum/eModuleType";
-
-import { ModuleMeta }     from "@interface/iModuleMeta";
-
-import { Module }         from "@module/module";
+import {
+    ModuleCategory,
+    ModuleType,
+    IModuleMeta,
+    Module,
+}                         from "osint.ts";
 
 import axios              from "axios";
 
-const META: ModuleMeta = {
+const META: IModuleMeta = {
     name        : "dns",
     description : "Searches for DNS records within a given domain name using API Ninjas.",
 

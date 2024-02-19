@@ -1,6 +1,4 @@
-import IQueryStandardization from "@interface/iQueryStandardization";
-import { ModuleCategory }    from "@enum/eModuleCategory";
-
+import { IQueryStandardization, ModuleCategory } from "osint.ts"
 export default class QIP implements IQueryStandardization {
 
     readonly category    : ModuleCategory = ModuleCategory.IP;

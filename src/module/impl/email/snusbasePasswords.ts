@@ -1,13 +1,14 @@
-import { ModuleCategory } from "@enum/eModuleCategory";
-import { ModuleType }     from "@enum/eModuleType";
+import {
+    ModuleCategory,
+    ModuleType,
+    IModuleMeta,
+    Module,
+}                         from "osint.ts";
 
-import { ModuleMeta }     from "@interface/iModuleMeta";
-
-import { Module }         from "@module/module";
 
 import axios              from "axios";
 
-const META: ModuleMeta = {
+const META: IModuleMeta = {
     name        : "snusbase-passwords",
     description : "Searches the Snusbase API v2 for passwords associated with a given email address",
 

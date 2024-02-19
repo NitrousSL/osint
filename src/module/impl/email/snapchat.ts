@@ -1,13 +1,13 @@
-import { ModuleCategory } from "@enum/eModuleCategory";
-import { ModuleType }     from "@enum/eModuleType";
-
-import { ModuleMeta }     from "@interface/iModuleMeta";
-
-import { Module }         from "@module/module";
+import {
+    ModuleCategory,
+    ModuleType,
+    IModuleMeta,
+    Module,
+}                         from "osint.ts";
 
 import axios              from "axios";
 
-const META: ModuleMeta = {
+const META: IModuleMeta = {
     name        : "snapchat",
     description : "Searches for SnapChat profile existence based on a given username.",
 

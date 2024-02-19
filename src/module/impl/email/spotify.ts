@@ -1,13 +1,14 @@
-import { ModuleCategory } from "@enum/eModuleCategory";
-import { ModuleType }     from "@enum/eModuleType";
+import {
+    ModuleCategory,
+    ModuleType,
+    IModuleMeta,
+    Module,
+}                         from "osint.ts";
 
-import { ModuleMeta }     from "@interface/iModuleMeta";
-
-import { Module }         from "@module/module";
 
 import axios              from "axios";
 
-const META: ModuleMeta = {
+const META: IModuleMeta = {
     name        : "spotify",
     description : "Searches for Spotify profile existence based on a given email.",
 

@@ -12,9 +12,6 @@
         "strict": true,
         "esModuleInterop": true,
         "paths": {
-            "@interface/*" : ["./src/sdk/interface/*"],
-            "@enum/*"      : ["./src/sdk/enum/*"],
-            "@module/*"    : ["./src/module/*"],
             "@config/*"    : ["./src/sdk/config.ts"],
             "@package"     : ["./package.json"],
         },

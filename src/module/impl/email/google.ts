@@ -1,16 +1,16 @@
-import { ModuleCategory } from "@enum/eModuleCategory";
-import { ModuleType }     from "@enum/eModuleType";
-
-import { ModuleMeta }     from "@interface/iModuleMeta";
-
-import { Module }         from "@module/module";
+import {
+    ModuleCategory,
+    ModuleType,
+    IModuleMeta,
+    Module,
+}                         from "osint.ts";
 
 import { PathFinder }     from "@config/*";
 
 import { exec }           from "child_process";
 import path               from "path";
 
-const META: ModuleMeta = {
+const META: IModuleMeta = {
     name        : "google",
     description : "Searches Google profile info using Ghunt based on a given gmail address.",
 
